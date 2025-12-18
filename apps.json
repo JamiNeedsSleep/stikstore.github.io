@@ -1,7 +1,7 @@
 {
   "name": "StikDebug Repository",
   "identifier": "com.stik.stikdebug",
-  "website": "https://github.com/StephenDev0/StikDebug/",
+  "website": "https://stikdebug.xyz",
   "subtitle": "Official AltSource for StikDebug.",
   "description": "An on-device JIT enabler for iOS versions 17.4+ (excluding iOS 18.4 beta 1), powered by idevice.",
   "tintColor": "#293B45",
