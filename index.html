@@ -80,6 +80,14 @@
             backdrop-filter: var(--glass-blur) saturate(180%);
             -webkit-backdrop-filter: var(--glass-blur) saturate(180%);
             border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: 8px 24px;
+            background: rgba(20, 20, 20, 0.9);
+            top: 10px;
+            max-width: 900px;
         }
 
         .logo {
@@ -87,6 +95,11 @@
             font-weight: 700;
             letter-spacing: -0.5px;
             color: #fff;
+            transition: font-size 0.3s ease;
+        }
+
+        header.scrolled .logo {
+            font-size: 1.1rem;
         }
 
         .logo span { 
@@ -415,6 +428,15 @@
         }
 
         setInterval(updateTimer, 1000);
+
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
     </script>
 
     <div class="container">
